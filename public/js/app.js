@@ -55,4 +55,4 @@ loadMyStationRole()
 // Limpa nomes locais após reset via evento global
 ioClient.on('dataRefresh',payload=>{if(payload&&payload.reason==='reset'){try{localStorage.removeItem('last_by')}catch(e){}}})
 // Limpa nomes locais após reset acionado por este cliente
-document.getElementById('resetForm').addEventListener('submit',()=>{try{localStorage.removeItem('last_by')}catch(e){}})
+document.getElementById('resetForm').addEventListener('submit',()=>{try{localStorage.removeItem('last_by')}catch(e){}}) 
