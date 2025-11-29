@@ -1,0 +1,5 @@
+const xlsx = require('xlsx')
+const ws = xlsx.utils.aoa_to_sheet([["Série","Aluno","Mesa","Veio","Chamado","Produtos"]])
+const wb = xlsx.utils.book_new()
+xlsx.utils.book_append_sheet(wb, ws, 'Registros')
+xlsx.writeFile(wb, 'scripts/template.xlsx')

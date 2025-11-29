@@ -1,0 +1,31 @@
+:root{--bg:#f7f7f8;--card:#ffffff;--text:#0b1120;--muted:#6b7280;--primary:#0d6efd;--success:#16a34a;--success-bg:#dff2e3;--success-border:#cfe8d7;--gray-bg:#e9ecef;--gray-border:#ced4da;--shadow:0 10px 30px rgba(16,24,40,.06)}
+body{background:var(--bg);color:var(--text)}
+.navbar{box-shadow:var(--shadow)}
+.badge{font-size:.9rem}
+.status{display:inline-flex;align-items:center;gap:8px;margin-left:12px}
+.status::before{content:"";display:inline-block;width:8px;height:8px;border-radius:999px;background:#22c55e}
+.status-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;border-radius:12px;border:1px solid;font-weight:700;min-width:96px;transition:all .15s ease}
+.status-btn.yes{background:var(--success-bg);color:#0f5132;border-color:var(--success-border)}
+.status-btn.no{background:var(--gray-bg);color:#495057;border-color:var(--gray-border)}
+.status-btn:hover{transform:translateY(-1px)}
+.disabled-toggle{opacity:.6;cursor:not-allowed}
+.toggle-cell{transition:all .2s ease}
+.toggle-cell:hover{transform:scale(1.03)}
+.alter-by{font-size:.875rem;margin-top:6px;display:block;color:var(--success)}
+.alter-by .icon{width:16px;height:16px;margin-right:6px;vertical-align:-2px}
+table thead th{background:#0b1736;color:#fff;border-bottom:none}
+table thead th:nth-child(4){background:#12346b}
+table thead th:nth-child(5){background:#4c1d95}
+table{border-collapse:separate;border-spacing:0}
+table tbody tr{background:var(--card)}
+table tbody tr:hover{filter:brightness(0.99)}
+.table-responsive{border-radius:12px;box-shadow:var(--shadow)}
+#search{border-radius:10px;padding:10px 14px}
+.group-row td{background:#0b1736;color:#fff;font-weight:700;padding:10px 14px;border-top:2px solid #0d6efd}
+.group-row td:nth-child(4), .group-row td:nth-child(5){text-align:center}
+.group-stat .badge{border-radius:999px;padding:8px 12px;font-weight:700}
+.group-stat.veio .badge{background:var(--success-bg);color:#0f5132;border:1px solid var(--success-border)}
+.group-stat.chamado .badge{background:#efe7fb;color:#4c1d95;border:1px solid #e2d7f8}
+/* Loading overlay */
+#loading-overlay{position:fixed;inset:0;background:rgba(255,255,255,0.95);z-index:1050;display:flex;align-items:center;justify-content:center}
+.loading-card{background:#fff;border:1px solid #eee;border-radius:12px;box-shadow:var(--shadow);padding:24px;display:flex;flex-direction:column;align-items:center;gap:12px}
